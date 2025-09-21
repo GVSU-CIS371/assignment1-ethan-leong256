@@ -1,7 +1,55 @@
+
 body,
 html {
-  /* height:100%; */
+  height: 100%;
 
   margin: 0px;
   padding: 0px;
+}
+
+/* Main grid container */
+#app {
+  display: grid;
+  min-height: 100vh; /* fills users full screen */ /* vh = viewport height */
+  grid-template-rows: auto 1fr auto; /* header and footer: auto, main: flexible*/
+  grid-template-areas: /* define grid layout */
+  "header"
+  "main"
+  "footer";
+}
+
+/* remove default margin */
+header h1 {
+  margin: 0
+}
+
+/* put navigation list inside header */
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+/* navigation links */
+header nav a {
+  color: white
+}
+
+/* header grid area */
+header {
+  grid-area: header;
+}
+
+/* main grid area */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* four equal columns for items */
+}
+
+
+/* footer grid area */
+footer {
+  grid-area: footer;
+  text-align: center;
+
 }
