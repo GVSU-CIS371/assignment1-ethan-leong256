@@ -2,9 +2,7 @@
 body,
 html {
   height: 100%;
-
-  margin: 0px;
-  padding: 0px;
+  overflow: hidden;
 }
 
 /* Main grid container */
@@ -45,8 +43,6 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* four equal columns for items */
-  overflow: hidden; /*prevents scrolling */
-  height: 100%;
 }
 
 /* store item styling */
