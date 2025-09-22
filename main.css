@@ -62,9 +62,11 @@ header nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 350px;
   width: 100%;
   box-sizing: border-box;
+  gap: 10px;
 }
 
 /* item images styling */
@@ -78,4 +80,10 @@ header nav a {
 /* store item paragraph styling */
 .store-item p {
   flex-grow: 1;
+}
+
+/* price/label spans inside item */
+.store-item span {
+  display: inline-block;
+
 }
