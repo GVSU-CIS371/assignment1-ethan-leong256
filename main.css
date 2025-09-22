@@ -1,7 +1,82 @@
+
 body,
 html {
-  /* height:100%; */
+  height: 100%;
+}
 
-  margin: 0px;
-  padding: 0px;
+/* Main grid container */
+#app {
+  display: grid;
+  min-height: 100vh; /* fills users full screen */ /* vh = viewport height%*/
+  grid-template-rows: auto 1fr auto; /* header and footer: auto, main: flexible*/
+  grid-template-areas: /* define grid layout */
+  "header"
+  "main"
+  "footer";
+}
+
+/* header grid area */
+header {
+  grid-area: header;
+}
+
+/* main grid area */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* four equal columns for items */
+  /* 1fr: helps avoid horizantal scroll in main */
+  overflow: hidden;
+}
+
+/* footer grid area */
+footer {
+  grid-area: footer;
+  text-align: center;
+
+}
+
+/* remove default margin */
+/* removes white space above the header*/
+header h1 {
+  margin: 0
+}
+
+/* put style nav list inside header */
+header nav ul {
+  list-style: none; /* remove points */
+  display: flex; /* put into flex container */
+  justify-content: flex-end; /* move to right side of container */
+  gap: 10px; /* adds gap between items in list */
+}
+
+/* navigation links */
+header nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* store item styling */
+.store-item { 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* item images styling */
+.store-item img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+}
+
+/* store item paragraph styling */
+.store-item p {
+  flex-grow: 1;
 }
