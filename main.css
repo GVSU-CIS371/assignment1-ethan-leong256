@@ -79,13 +79,3 @@ header nav a {
 .store-item p {
   flex-grow: 1;
 }
-
-/* price/label spans inside item */
-.store-item span {
-  display: inline-block;
-  /* changes span to blocks and alligns them
-  rating
-  price
-  stock
-  */
-}
