@@ -47,6 +47,7 @@ header nav ul {
   list-style: none; /* remove points */
   display: flex; /* put into flex container */
   justify-content: flex-end; /* move to right side of container */
+  display: flex;
   gap: 3spx;
 }
 
