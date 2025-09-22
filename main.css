@@ -15,25 +15,6 @@ html {
   "footer";
 }
 
-/* remove default margin */
-/* removes white space above the header*/
-header h1 {
-  margin: 0
-}
-
-/* put style nav list inside header */
-header nav ul {
-  list-style: none; /* remove points */
-  display: flex; /* put into flex container */
-  justify-content: flex-end; /* move to right side of container */
-}
-
-/* navigation links */
-header nav a {
-  color: blue
-
-}
-
 /* header grid area */
 header {
   grid-area: header;
@@ -52,6 +33,26 @@ main {
 footer {
   grid-area: footer;
   text-align: center;
+
+}
+
+/* remove default margin */
+/* removes white space above the header*/
+header h1 {
+  margin: 0
+}
+
+/* put style nav list inside header */
+header nav ul {
+  list-style: none; /* remove points */
+  display: flex; /* put into flex container */
+  justify-content: flex-end; /* move to right side of container */
+  word-spacing: 3px;
+}
+
+/* navigation links */
+header nav a {
+  color: blue
 
 }
 
