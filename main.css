@@ -44,17 +44,16 @@ header h1 {
 
 /* put style nav list inside header */
 header nav ul {
-  display: flex;
   list-style: none; /* remove points */
   display: flex; /* put into flex container */
   justify-content: flex-end; /* move to right side of container */
-  gap: 50spx;
 }
 
 /* navigation links */
 header nav a {
   color: blue;
   text-decoration: none;
+  gap: 50spx;
 }
 
 /* store item styling */
