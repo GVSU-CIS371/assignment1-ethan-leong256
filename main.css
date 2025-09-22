@@ -47,13 +47,13 @@ header nav ul {
   list-style: none; /* remove points */
   display: flex; /* put into flex container */
   justify-content: flex-end; /* move to right side of container */
+  gap: 50px;
 }
 
 /* navigation links */
 header nav a {
   color: blue;
   text-decoration: none;
-  justify-content: space-evenly;
 }
 
 /* store item styling */
