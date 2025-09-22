@@ -53,7 +53,7 @@ header nav ul {
 header nav a {
   color: blue;
   text-decoration: none;
-  gap: 50spx;
+  justify-content: space-evenly;
 }
 
 /* store item styling */
